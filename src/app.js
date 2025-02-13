@@ -68,6 +68,7 @@
   
   // Middleware
   // app.use(cors()) 
+  const allowedOrigins = ['https://claim-frontend-pi.vercel.app'];
   app.use(
     cors({
       origin: allowedOrigins,
