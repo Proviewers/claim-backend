@@ -95,7 +95,7 @@ app.use("/api/claims", require("./routes/ClaimRoutes"));
 // app.use("/api/documents", require("./routes/DocumentRoutes"));
 app.use("/api/payments", require("./routes/PaymentRoutes"));
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 30000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
