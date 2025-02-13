@@ -69,10 +69,7 @@
   // Middleware
   // app.use(cors()) 
   app.use(
-    cors({
-      origin: "http://localhost:5173", // Allow only frontend URL
-      credentials: true, // Allow cookies & auth headers
-    })
+    cors()
   );
 
 app.use(express.json());
