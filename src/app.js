@@ -69,7 +69,12 @@
   // Middleware
   // app.use(cors()) 
   app.use(
-    cors()
+    cors({
+      origin: allowedOrigins,
+      credentials: true, // Allow cookies, sessions, or tokens to be sent
+      methods: 'GET,POST,PUT,DELETE',
+      allowedHeaders: 'Content-Type,Authorization',
+    })
   );
 
 app.use(express.json());
